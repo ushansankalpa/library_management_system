@@ -1,0 +1,71 @@
+<nav class="navbar navbar-inverse navbar-fixed-top  navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="navbar-brand" href="#">
+      <!--<img src="../assets/ball.png" alt="" width="40" height="40" class="d-inline-block align-top">-->
+      Library System
+    </div>
+  </div>
+</nav>
+
+
+
+<div style="text-align:center;">
+  <h1 class="text-danger"> Welcome to {{title}}!</h1>
+
+  <div>
+    <div>
+      <div>Book Title</div>
+      <input [(ngModel)]="book_title" type="text" placeholder="Enter Book Title">
+    </div>
+
+    <div>
+      <div>Book Author</div>
+      <input  [(ngModel)]="author" type="text" placeholder="Enter Book Author">
+    </div>
+
+    <div>
+      <div>Book Price</div>
+      <input  [(ngModel)]="price" type="number" placeholder="Enter Book price">
+    </div>
+
+    <div>
+      <div>Book Available</div>
+      <input  [(ngModel)]="available" type="text" placeholder="Enter Book Available">
+    </div>
+
+    <div>
+      <button (click)="addBook()" type="button" class="btn btn-primary">Primary</button>
+    </div>
+    
+
+
+  </div>
+
+
+  <h2 class="text-danger" style="font-family: 'Lobster', cursive;  font-size:300%; margin:30px;">Books List</h2>
+  <div class="container">
+    <table class="table table-bordered">
+      <thead class="bg-dark text-white">
+      <tr>
+        <th >Name Of Book</th>
+        <th >Author</th>
+        <th >Price</th>
+        <th >Available</th>
+        
+      </tr>
+      </thead>
+      <tbody class="bg-primary text-white">
+      <tr *ngFor="let gd of books">
+        <th scope="row">{{gd.book_title}}</th>
+        <td>{{gd.author}}</td>
+        <td>{{gd.price}}</td>
+        <td>{{gd.available}}</td>
+        
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  
+</div>
