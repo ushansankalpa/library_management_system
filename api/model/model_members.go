@@ -2,7 +2,7 @@ package model
 
 type Members struct {
 	Model
-	MemberId      int    `json:"mem_id"`
+	MemberId      int    `json:"mem_id" swaggerignore:"true"`
 	MemberName    string `json:"mem_name"`
 	MemberAddress string `json:"mem_address"`
 	MemberType    string `json:"mem_type"`
