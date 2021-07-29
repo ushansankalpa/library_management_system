@@ -9,40 +9,74 @@
 
 
 
-<div style="text-align:center;">
-  <h1 class="text-danger"> Welcome to {{title}}!</h1>
+<div style="text-align:center; background-image: url(../assets/background.jpg);" >
+  <h1 class="text-dark" > Welcome to Library Management System</h1>
 
-  <div>
-    <div>
+
+  <div class="container-sm" style="padding: 9%;">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <h4>Add Books</h4>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Book Title</span>
+          <input [(ngModel)]="book_title" type="text" placeholder="Enter Book Title" class="form-control"  >
+        </div>
+    
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Book Author</span>
+          <input [(ngModel)]="author" type="text" placeholder="Enter Book Author" class="form-control" >
+        </div>
+    
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Book Price</span>
+          <input  [(ngModel)]="price" type="number" placeholder="Enter Book price" class="form-control" >
+        </div>
+    
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Book Available</span>
+          <input  [(ngModel)]="available" type="text" placeholder="Enter Book Available" class="form-control" >
+        </div>
+    
+        <div class="d-grid gap-2 col-6 mx-auto" style="padding: 30px;">
+          <button (click)="addBook()" type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- <div style="padding: 1%;">
+      <label>Book Title</label>
       <div>Book Title</div>
       <input [(ngModel)]="book_title" type="text" placeholder="Enter Book Title">
     </div>
 
     <div>
+      <label>Book Author</label>
       <div>Book Author</div>
       <input  [(ngModel)]="author" type="text" placeholder="Enter Book Author">
     </div>
 
     <div>
+      <label>Book Price</label>
       <div>Book Price</div>
       <input  [(ngModel)]="price" type="number" placeholder="Enter Book price">
     </div>
 
     <div>
+      <label>Book Available</label>
       <div>Book Available</div>
       <input  [(ngModel)]="available" type="text" placeholder="Enter Book Available">
-    </div>
+    </div> -->
 
-    <div>
-      <button (click)="addBook()" type="button" class="btn btn-primary">Primary</button>
-    </div>
+    
     
 
 
-  </div>
 
 
-  <h2 class="text-danger" style="font-family: 'Lobster', cursive;  font-size:300%; margin:30px;">Books List</h2>
+  <h2 class="text-Warning" style="font-family: 'Lobster', cursive;  font-size:300%; margin:30px;">Books List</h2>
   <div class="container">
     <table class="table table-bordered">
       <thead class="bg-dark text-white">

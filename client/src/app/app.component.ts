@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
   public book_id = ''
   public book_title = ''
   public author = ''
-  public price =0
+  public price 
   public available = ''
 
 
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit{
     
     this.book_title = ''
     this.author = ''
-    this.price=0
+    this.price
     this.available = ''
     await this.loadBooks()
   }
