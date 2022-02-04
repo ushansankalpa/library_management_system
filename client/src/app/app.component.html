@@ -10,7 +10,7 @@
 
 
 <div style="text-align:center; background-image: url(../assets/background.jpg);" >
-  <h1 class="text-dark" > Welcome to Library Management System</h1>
+  <h1 class="text-dark" > Welcome to Library Management  System</h1>
 
 
   <div class="container-sm" style="padding: 9%;">
@@ -21,22 +21,22 @@
           <span class="input-group-text" id="inputGroup-sizing-default">Book Title</span>
           <input [(ngModel)]="book_title" type="text" placeholder="Enter Book Title" class="form-control"  >
         </div>
-    
+
         <div class="input-group mb-3">
           <span class="input-group-text" id="inputGroup-sizing-default">Book Author</span>
           <input [(ngModel)]="author" type="text" placeholder="Enter Book Author" class="form-control" >
         </div>
-    
+
         <div class="input-group mb-3">
           <span class="input-group-text" id="inputGroup-sizing-default">Book Price</span>
           <input  [(ngModel)]="price" type="number" placeholder="Enter Book price" class="form-control" >
         </div>
-    
+
         <div class="input-group mb-3">
           <span class="input-group-text" id="inputGroup-sizing-default">Book Available</span>
           <input  [(ngModel)]="available" type="text" placeholder="Enter Book Available" class="form-control" >
         </div>
-    
+
         <div class="d-grid gap-2 col-6 mx-auto" style="padding: 30px;">
           <button (click)="addBook()" type="button" class="btn btn-primary">Submit</button>
         </div>
@@ -70,8 +70,8 @@
       <input  [(ngModel)]="available" type="text" placeholder="Enter Book Available">
     </div> -->
 
-    
-    
+
+
 
 
 
@@ -85,7 +85,7 @@
         <th >Author</th>
         <th >Price</th>
         <th >Available</th>
-        
+
       </tr>
       </thead>
       <tbody class="bg-primary text-white">
@@ -94,12 +94,12 @@
         <td>{{gd.author}}</td>
         <td>{{gd.price}}</td>
         <td>{{gd.available}}</td>
-        
+
       </tr>
       </tbody>
     </table>
   </div>
 
 
-  
+
 </div>
